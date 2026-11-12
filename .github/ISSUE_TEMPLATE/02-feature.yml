@@ -4,6 +4,14 @@ labels:
   - C-enhancement
   - S-needs-triage
 body:
+  - type: checkboxes
+    id: duplicate-check
+    attributes:
+      label: "Duplicate check / 重复检查"
+      description: "Search open and closed issues first. If a matching issue exists, add context there. / 请先搜索开放及已关闭的 Issue；已有同类问题时，请在原 Issue 下补充。"
+      options:
+        - label: "I have searched open and closed issues and confirmed this is not a duplicate. / 我已搜索开放及已关闭的 Issue，确认没有重复问题。"
+          required: true
   - type: markdown
     attributes:
       value: |

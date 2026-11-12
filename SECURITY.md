@@ -6,9 +6,9 @@ Please report **potentially exploitable security vulnerabilities privately**. Do
 
 ## How to report / 报告方式
 
-For a **public repository** with private vulnerability reporting enabled, open the repository's **Security → Advisories → Report a vulnerability** and use the structured form. This feature must be enabled for each repository by its administrator; publishing this policy or form does not enable it automatically.
+For a **public repository** with private vulnerability reporting enabled, open the repository's **Security → Advisories → Report a vulnerability** and use the structured form. An administrator must enable this feature for each public repository under Settings → Advanced Security → Private vulnerability reporting. Publishing this policy or the form does not enable it automatically.
 
-对于已启用私密漏洞报告的公开仓库，请前往 **Security → Advisories → Report a vulnerability**。该功能需由各仓库管理员启用，提交本文件本身不会自动开启。
+对于已启用私密漏洞报告的公开仓库，请前往 **Security → Advisories → Report a vulnerability**。该功能需由各公开仓库管理员在 Settings → Advanced Security → Private vulnerability reporting 中启用；提交安全策略或表单不会自动开启。
 
 If the repository does not offer a private reporting channel, choose the **Question** issue form (or an available support channel) and ask maintainers how to contact them securely, without disclosing the flaw itself. For private repositories, use a trusted private channel available to the collaborators or administrators.
 
@@ -16,9 +16,9 @@ If the repository does not offer a private reporting channel, choose the **Quest
 
 ## Information to include / 建议材料
 
-Describe affected versions, the attack prerequisites, impact and a minimal safe proof of concept. Use only synthetic data. Never include passwords, API keys, user information, medical records or production data.
+Describe affected versions, the attack prerequisites, impact and a minimal safe proof of concept. Use only synthetic data. Never include passwords, API keys, personal information or other sensitive data.
 
-请说明受影响版本、利用条件、影响范围及最小复现步骤。仅使用模拟数据，不附真实密码、Token、个人信息、医疗记录或生产数据。
+请说明受影响版本、利用条件、影响范围及最小复现步骤。仅使用模拟数据，不附密码、访问令牌、个人信息或其他敏感数据。
 
 ## Supported versions / 支持版本
 
