@@ -1,0 +1,3 @@
+# Contributors choose a form; maintainers with write access can still open blank issues.
+# Do not add repository-specific URLs here: this configuration is shared across projects.
+blank_issues_enabled: false

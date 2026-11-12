@@ -1,0 +1,28 @@
+name: "💬 Question / 使用与技术咨询"
+description: "Ask about usage, setup or expected behavior / 询问使用方法、配置或预期行为"
+labels:
+  - C-question
+  - S-needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the README, documentation and existing issues first. If the repository enables Discussions, use that for open-ended conversations.
+        请先查看文档和已有 Issue；若仓库启用了 Discussions，开放式讨论优先在那里发起。
+  - type: textarea
+    id: question
+    attributes:
+      label: "Question / 问题"
+      description: "Explain what you want to know and what outcome you need. / 具体想弄清楚什么？"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context and what you've tried / 背景与已尝试方法"
+      description: "Provide relevant configuration, attempts or documentation you read. / 提供配置、操作或参考文档。"
+  - type: input
+    id: version
+    attributes:
+      label: "Relevant version / 相关版本"
+      description: "Optional. / 可选。"

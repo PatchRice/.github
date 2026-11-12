@@ -1,0 +1,65 @@
+name: "🐛 Bug report / 缺陷报告"
+description: "Report crashes, regressions, incorrect behavior or data problems / 报告异常行为"
+labels:
+  - C-bug
+  - S-needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Please search existing issues first.
+        **Do not disclose security vulnerabilities here.** Follow the repository's SECURITY.md for private reporting. Redact tokens, personal data and private records from screenshots or logs.
+
+        感谢反馈。请先搜索已有 Issue；安全漏洞请按仓库安全策略私密报告，日志和截图中请移除令牌及个人信息。
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "Actual behavior / 实际表现"
+      description: "What happened? Include any meaningful error messages. / 出现了什么问题？"
+      placeholder: "What went wrong? / 问题表现……"
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected behavior / 预期行为"
+      description: "What should have happened? / 正常情况下应是什么结果？"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Steps to reproduce / 复现步骤"
+      description: "For intermittent bugs, describe triggers, frequency, or what you tried. / 偶发问题可填写触发条件、频率或已有线索。"
+      placeholder: |
+        1. Open / 打开……
+        2. Perform / 执行……
+        3. Observe / 观察……
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "Version / Commit / 版本"
+      description: "Release, build or commit SHA; for a development build, include its date or SHA. / 版本号、构建号或提交哈希。"
+      placeholder: "e.g. v1.2.3, commit abc1234"
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment / 运行环境"
+      description: "OS, runtime, device, browser or configuration, if relevant. / 相关系统、运行时或设备信息。"
+      placeholder: "OS: ...; runtime: ...; configuration: ..."
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: "Frequency / 复现频率"
+      options:
+        - Always / 必现
+        - Sometimes / 偶发
+        - Once / 仅一次
+        - Unknown / 尚不清楚
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Logs, screenshots and additional context / 日志与补充材料"
+      description: "Paste relevant excerpts or attach files, after redacting sensitive information. / 可附截图或日志，请先脱敏。"

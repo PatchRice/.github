@@ -1,0 +1,31 @@
+name: "📚 Documentation / 文档问题"
+description: "Report missing, incorrect or confusing documentation / 文档缺失、错误或不清晰"
+labels:
+  - C-docs
+  - S-needs-triage
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: "Location / 文档位置"
+      description: "URL, file path or topic; use 'missing' if it does not exist. / 文档链接、路径或尚不存在的主题。"
+      placeholder: "e.g. README.md, docs/install.md, or missing / 缺失"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / 具体问题"
+      description: "What is wrong, missing or confusing? / 哪部分有误、缺失或容易误解？"
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: "Suggested improvement / 建议修改"
+      description: "What should the documentation explain or change? / 期望补充或修改什么？"
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context / 补充信息"
+      description: "Affected versions, related issues, examples, screenshots or links. / 相关版本、截图和链接。"

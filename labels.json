@@ -1,0 +1,23 @@
+[
+  {"name":"C-bug", "color":"D73A4A", "description":"Unexpected or incorrect behavior / 缺陷"},
+  {"name":"C-enhancement", "color":"1D76DB", "description":"Feature request or improvement / 功能建议"},
+  {"name":"C-maintenance", "color":"7950C4", "description":"Refactoring, dependencies, CI or technical debt / 维护任务"},
+  {"name":"C-docs", "color":"0E8A16", "description":"Documentation additions or fixes / 文档"},
+  {"name":"C-question", "color":"BFD4F2", "description":"Usage question or support / 咨询"},
+  {"name":"P-critical", "color":"B60205", "description":"Release-blocking or comparably urgent; immediate maintainer action / 发布阻塞级"},
+  {"name":"P-high", "color":"D93F0B", "description":"High impact and actively prioritized / 高优先级"},
+  {"name":"P-medium", "color":"FBCA04", "description":"Worth scheduling but not urgent / 中优先级"},
+  {"name":"P-low", "color":"C2E0C6", "description":"Low impact or no near-term plan / 低优先级"},
+  {"name":"S-needs-triage", "color":"D4C5F9", "description":"Awaiting maintainer classification / 等待分诊"},
+  {"name":"S-needs-info", "color":"FEF2C0", "description":"Reporter or maintainer needs to provide details / 等待补充信息"},
+  {"name":"S-ready", "color":"0E8A16", "description":"Scoped and ready for implementation / 可开始处理"},
+  {"name":"S-blocked", "color":"B60205", "description":"Blocked by an external or internal dependency / 当前阻塞"},
+  {"name":"I-regression", "color":"F9A602", "description":"Previously working behavior has broken / 回归缺陷"},
+  {"name":"I-crash", "color":"E99695", "description":"Crash, panic or process termination / 崩溃"},
+  {"name":"I-data-loss", "color":"C82829", "description":"Potential data loss or corruption / 数据丢失或损坏"},
+  {"name":"I-performance", "color":"F9D0C4", "description":"Performance or resource usage concern / 性能与资源"},
+  {"name":"good first issue", "color":"7057FF", "description":"Approachable for a first contribution / 新贡献者友好"},
+  {"name":"help wanted", "color":"008672", "description":"Maintainers welcome external help / 欢迎协助"},
+  {"name":"duplicate", "color":"CFD3D7", "description":"Already tracked by another issue / 重复问题"},
+  {"name":"wontfix", "color":"FFFFFF", "description":"Intentionally not planned / 不计划处理"}
+]

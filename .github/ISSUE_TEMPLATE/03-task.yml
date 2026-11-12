@@ -1,0 +1,44 @@
+name: "🛠️ Maintenance task / 维护与重构任务"
+description: "Track refactoring, dependency upgrades, CI, tests and technical debt / 跟踪维护工作"
+labels:
+  - C-maintenance
+  - S-needs-triage
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Task type / 任务类型"
+      options:
+        - Refactor / 重构
+        - Dependency upgrade / 依赖升级
+        - Build or CI / 构建与持续集成
+        - Tests / 测试
+        - Performance or reliability / 性能与可靠性
+        - Other maintenance / 其他维护
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Background and objective / 背景与目标"
+      description: "Why is the task needed and what outcome is expected? / 为什么需要完成这项任务？"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope / 工作范围"
+      description: "What should change and what is out of scope? / 涉及范围与明确不做的部分。"
+  - type: textarea
+    id: completion
+    attributes:
+      label: "Definition of done / 完成标准"
+      description: "Describe how to verify completion; a short checklist is fine. / 可用简短清单列出可验证的完成条件。"
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "Dependencies and risks / 依赖与风险"
+      description: "Related issues/PRs, blockers or migration concerns. / 关联任务、阻塞事项与迁移风险。"
